@@ -1,0 +1,23 @@
+{
+    "name": "sbjka",
+    "version": "0.1.0",
+    "description": "A website built for my friends at Santa Barbara JKA",
+    "homepage": "http://sbjka.com",
+    "author": "Robin Hernandez <robin.webdev@gmail.com>",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-cli": "~0.1.13",
+        "grunt-contrib-uglify": "~0.5.0",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-copy": "~0.6.0",
+        "grunt-contrib-concat": "~0.4.0",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-contrib-watch": "~0.6.1",
+        "grunt-contrib-stylus": "~0.20.0",
+        "grunt-bower-task": "~0.3.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/speedyhernandez/sbjka.git"
+    }
+}

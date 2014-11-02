@@ -1,0 +1,26 @@
+[
+    {
+        "url": "/",
+        "text": "Home"
+    },
+    {
+        "url": "/shotokan",
+        "text": "Shotokan"
+    },
+    {
+        "url": "/instructors",
+        "text": "Instructors"
+    },
+    {
+        "url": "/schedule",
+        "text": "Schedule"
+    },
+    {
+        "url": "/kata",
+        "text": "Kata"
+    },
+    {
+        "url": "/contact",
+        "text": "Contact"
+    }
+]

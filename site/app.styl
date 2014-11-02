@@ -1,0 +1,928 @@
+@import url(http://fonts.googleapis.com/css?family=Open\+Sans)
+/* Variables */
+base-font = 'Helvetica Neue','Open Sans',Georgia,serif
+base-font-size = 100%\/1.5
+base-font-color = #222
+body-font = normal 1.3125em/1.52381em base-font
+common-border-color = #333
+header-font-color = #900
+header-bg-color = #f4ead9
+active-color = #900
+main-bg-color = #fff
+nav-border-color = #b6a27f
+selection-color = #c47529
+selection-text-color = main-bg-color
+subtle-color = #eee
+support-color = #ccc
+table-border = 1px solid support-color
+
+/* Mix-ins */
+fontSmoothing()
+    -webkit-font-smoothing: antialiased
+    font-smoothing: antialiased
+    text-rendering: optimizeLegibility
+
+vendorize(property, value)
+    -webkit-{property}: value
+    -moz-{property}: value
+    -ms-{property}: value
+    {property}: value
+
+hideText()
+    overflow: hidden
+    text-indent: -9999px
+
+bgImage(value)
+    background: url(value) no-repeat scroll 0 0 transparent
+
+mobiButtonOn()
+    background-color: rgba(0,0,0,0.05)
+    span
+        background-color: #900
+
+/* Base reset */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+dialog
+    display: block
+
+audio[controls],
+canvas,
+video
+    display: inline-block
+    *display: inline
+    zoom: 1
+
+html
+    background: url('../img/ButterflyBeach.jpg') no-repeat center center fixed main-bg-color
+    vendorize(background-size, cover)
+    font-size: 100%
+    height: 100%
+    overflow-y: scroll
+    -webkit-text-size-adjust: 100%
+
+body
+    margin: 0 auto
+    min-height: 100%
+    fontSmoothing()
+
+body,
+button,
+input,
+select,
+textarea
+    font: base-font-size base-font
+    *font-size: 1em
+    color: base-font-color
+
+p,
+blockquote,
+q,
+pre,
+address,
+hr,
+code,
+samp,
+dl,
+ol,
+ul,
+form,
+table,
+fieldset,
+menu,
+img
+    margin: 0 0 1.5em
+    padding: 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    margin: 0
+    text-shadow: 1px 1px 1px rgba(0,0,0,.10)
+
+h1,
+h2,
+h3
+    color: header-font-color
+
+h1
+    font-size: 1.66667em
+    line-height: 1.2em
+    margin-bottom: 1.2em
+
+h2
+    font-size: 1.33333em
+    line-height: 1em
+    margin-bottom: 1.5em
+
+h3,
+h4,
+h5,
+h6
+    font-size: 1em
+    line-height: 1.5em
+    margin-bottom: 1.5em
+
+p,
+ul,
+blockquote,
+pre,
+td,
+th,
+label
+    margin: 0
+    font-size: 1em
+    line-height: 1.5em
+    margin-bottom: 1.5em
+
+small,
+p.small
+    margin: 0
+    font-size: .875em
+    line-height: 1.7142857142857em
+    margin-bottom: 1.7142857142857em
+
+pre
+    white-space: pre
+    white-space: pre-wrap
+    word-wrap: break-word
+
+pre,
+code,
+kbd,
+samp
+    font-size: 1em
+    line-height: 1.5em
+    margin-bottom: 1.5em
+
+table
+    border-collapse: collapse
+    border-spacing: 0
+    margin-bottom: 1.5em
+
+th
+    text-align: left
+
+tr,
+th,
+td
+    padding-right: 1.5em
+    border-bottom: 0 solid common-border-color
+
+form
+    margin: 0
+
+fieldset
+    border: 0
+    padding: 0
+
+textarea
+    overflow: auto
+    vertical-align: top
+
+legend
+    *margin-left: -.75em
+
+button,
+input,
+select,
+textarea
+    vertical-align: baseline
+    *vertical-align: middle
+
+button,
+input
+    line-height: normal
+    *overflow: visible
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]
+    cursor: pointer
+    vendorize(appearance, button)
+
+input[type="checkbox"],
+input[type="radio"]
+    vendorize(box-sizing, border-box)
+
+input[type="search"]
+    vendorize(appearance, textfield)
+    vendorize(box-sizing, content-box)
+
+input[type="search"]::-webkit-search-decoration
+    vendorize(appearance, none)
+
+button::-moz-focus-inner,
+input::-moz-focus-inner
+    border: 0
+    padding: 0
+
+blockquote,
+q
+    quotes: none
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+    content: ''
+    content: none
+
+blockquote,
+q,
+cite
+    font-style: italic
+
+blockquote
+    padding-left: 1.5em
+    border-left: 3px solid #ccc
+
+blockquote > p
+    padding: 0
+
+ul,
+ol
+    list-style-position: inside
+    padding: 0
+
+li ul,
+li ol
+    margin: 0 1.5em
+
+dl dd
+    margin-left: 1.5em
+
+dt
+    font-family: base-font
+
+a
+    color: base-font-color
+    &:hover
+        color: active-color
+
+a:focus
+    outline: thin dotted
+
+a:hover,
+a:active
+    outline: none
+
+figure
+    margin: 0
+
+img,
+object,
+embed,
+video
+    max-width: 100%
+    _width: 100%
+
+img
+    border: 0
+    -ms-interpolation-mode: bicubic
+
+svg:not(:root)
+    overflow: hidden
+
+abbr[title],
+dfn[title]
+    border-bottom: 1px dotted common-border-color
+    cursor: help
+
+ins,
+mark
+    text-decoration: none
+
+mark
+    background: selection-color
+
+ins
+    background: selection-color
+
+del
+    text-decoration: line-through
+
+::-moz-selection
+    background: selection-color
+    color: selection-text-color
+    text-shadow: none
+
+::selection
+    background: selection-color
+    color: selection-text-color
+    text-shadow: none
+
+strong,
+b,
+dt
+    font-weight: 700
+
+dfn
+    font-style: italic
+
+var,
+address
+    font-style: normal
+
+sub,
+sup
+    font-size: 75%
+    line-height: 0
+    position: relative
+    vertical-align: baseline
+
+sup
+    top: -.5em
+
+sub
+    bottom: -.25em
+
+span.amp
+    font-style: italic
+    font-size: 110%
+    line-height: 0
+    position: relative
+    vertical-align: baseline
+
+.cf:before,
+.cf:after
+    content: ""
+    display: table
+
+.cf:after
+    clear: both
+
+.cf
+    zoom: 1
+
+/* DEFAULT MOBILE STYLE */
+body
+    background-color: main-bg-color
+    padding: 0
+    position: relative
+    text-rendering: optimizeLegibility
+    -webkit-text-size-adjust: 100%
+
+#content
+    > div
+        background: url('../img/watermark.png') no-repeat scroll center transparent
+        background-size: 100%
+
+.c-wrapper
+    margin: 0 auto
+    padding: 1em 0
+    width: 92%
+
+header
+    background: url('../img/counter.jpg') no-repeat fixed center top header-bg-color
+    background-size: 150%
+    position: relative
+    text-align: center
+    &.mobi-open
+        background-attachment: scroll
+        background-position: center bottom
+        & nav
+            position: relative
+            button
+                mobiButtonOn()
+        ul
+            display: block
+            padding: 2.75em 0 0
+            width: 100%
+            li,
+            li a
+                display: block
+            li
+                border-top: 1px solid nav-border-color
+                a
+                    padding: 1.33333333333333em 0.83333333333333em
+                    text-align: left
+                &.active a,
+                & a:hover,
+                & a:active
+                    background-color: #f8f2e8
+    .c-wrapper
+        padding: 3.75em 0 1.5em
+    h1
+        font-size: 1.75em
+    h1,
+    h2
+        margin: 0
+    .logo
+        bgImage('../img/logo.png')
+        display: inline-block
+        height: 7.75em
+        hideText()
+        width: 9.5em
+
+nav
+    background-color: header-bg-color
+    border-bottom: 1px solid nav-border-color
+    clear: both
+    display: block
+    position: fixed
+    top: 0
+    width: 100%
+    .mobi-head
+        a
+            color: header-font-color
+            display: block
+            float: left
+            font-size: 1.3333em
+            font-weight: 800
+            line-height: 2.06255156378909em
+            padding-left: 0.5em
+            text-decoration: none
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1)
+        button
+            background: transparent
+            border: 0
+            border-radius: 4px
+            float: right
+            outline: none
+            padding: 0.625em
+            margin: 0.375em 0.625em
+            &:hover,
+            &:active
+                mobiButtonOn()
+            span
+                background-color: #222
+                border-radius: 1px
+                display: block
+                height: 2px
+                width: 1.25em
+            span + span
+                margin-top: 0.2em
+
+    ul
+        display: none
+        margin: 0
+        text-transform: uppercase
+        li
+            display: inline
+            font-size: 0.75em
+            line-height: 1em
+            padding: 0
+            &.active a
+                color: active-color
+
+section
+    display: inline-block
+    margin: 0
+    width: 100%
+    ol
+        list-style-position: outside
+        margin-left: 1.5em
+        padding-left: 0.5625em
+    ul
+        list-style: square outside none
+        margin-left: 1.1875em
+        li
+            padding-left: 0.5em
+
+blockquote
+    margin: 1.5em
+    padding-left: 0.5625em
+
+footer
+    background-color: subtle-color
+    .c-wrapper
+        div,
+        p,
+        address
+            font-size: 0.8em
+            line-height: 1em
+            > span,
+            a
+                display: block
+            .org
+                font-weight: 800
+                margin-bottom: 0.25em
+            .tel
+                margin: 1.5em 0;
+
+footer
+    > nav
+    > span
+        display: block
+        text-align: center
+
+table
+    border-bottom: table-border
+    font-size: 0.75em
+    margin: 0 0 1.14286em
+    text-align: center
+    width: 100%
+    td
+        border: table-border
+        border-style: solid solid none
+        height: 1.52381em
+        padding: 0
+        vertical-align: top
+        &:first-child
+            text-align: left
+        em,
+        span
+            display: block
+        em
+            margin: 0.5em 0
+        span.full,
+        span.mer
+            display: none
+        .full,
+        .abbr
+            font-weight: bold
+    .session
+        background-color: #eee
+    tr.mid td
+        border-style: dashed solid solid
+
+hr
+    border-top: 1px solid common-border-color
+    border-style: solid none none
+    display: block
+    margin: 1.5625em 0
+    width: 100%
+
+.to-top
+    color: support-color
+    float: right
+
+.show
+    display: block !important
+
+.hide
+    display: none !important
+
+.clear-it
+    clear: both
+    display: block
+
+.flush-bottom
+    margin-bottom: 0
+
+.photo
+    border: 1px solid nav-border-color
+    display: block
+    margin: 0 auto 1em
+    max-width: 16.375em
+    width: 100%
+    &.full
+        max-width: 37.5em
+    &.sml
+        max-width: 10.9375em
+
+#kata
+    border: 2px solid #eee
+    margin-left: 0
+    padding: 0 0.9375em
+    li
+        line-height: 1.25em
+        list-style: none
+        margin-bottom: -1px
+        padding: 0.625em 0
+        text-align: center
+        vertical-align: middle
+        span
+            display: block
+        .name
+            font-weight: 800
+        .desc
+            font-style: italic
+        div
+            display: block
+            margin-top: 0.625em
+            white-space: nowrap
+        a
+            background-image: none
+            border: 1px solid support-color
+            color: #333
+            cursor: pointer
+            display: inline-block
+            line-height: 1.42857143em
+            padding: 0.375em 0.75em
+            text-align: center
+            vendorize(user-select, none)
+            white-space: nowrap
+            &\+ a
+                margin-left: -1px
+            &:first-child
+                vendorize(border-radius, 4px 0px 0px 4px)
+            &:last-child
+                vendorize(border-radius, 0px 4px 4px 0px)
+            &:hover,
+            &:active
+                background-color: #ebebeb
+                border-color: #adadad
+            &:active
+                box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+        &\+ li
+            border-top: 1px solid #ebebeb
+
+#modal,
+#vid-wrapper,
+#printable
+    display: none
+
+#modal
+    background-color: rgba(0,0,0,0.5)
+    bottom: 0
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    vendorize(user-select, none)
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
+    -webkit-tap-highlight-color: transparent
+    .wrapper
+        -webkit-background-clip: padding-box
+        background-clip: padding-box
+        background-color: #fff
+        border: 1px solid #999
+        border: 1px solid rgba(0,0,0,.2)
+        border-radius: 6px
+        -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5)
+        box-shadow: 0 3px 9px rgba(0,0,0,.5)
+        margin: 0.625em
+        outline: 0
+        position: relative
+        width: auto
+        h5
+            color: #fff
+            background-color: #d9534f
+            border-top-left-radius: 4px
+            border-top-right-radius: 4px
+            min-height: 1.026875em
+            padding: 0.9375em
+            border-bottom: 1px solid #e5e5e5
+        iframe
+            border-width: 0px
+            display: block
+            margin: 0 auto 1.5em
+            width: 92%
+    z-index: 10
+
+#close-modal
+    background-color: transparent
+    border: 0
+    color: #000
+    display: block
+    float: right
+    font-weight: 800
+    filter: alpha\(opacity=20\)
+    margin: 1px 0
+    opacity: .2
+    outline: 0
+    padding: 0.9375em
+    span
+        font-size: 1.3125em
+        line-height: 1px
+    &:hover,
+    &:focus
+        color: #000
+        filter: alpha\(opacity=50\)
+        opacity: .5
+
+#contact-info
+    iframe
+        min-height: 13.75em
+        width: 100%
+
+#sbjka-info
+    padding-top: 1.5em
+    text-align: justify
+
+#four-oh-four
+    display: inline-block
+    max-height: 9.0625em
+    margin: 1.5em auto
+    max-width: 21.25em
+    width: 100%
+
+/* media Queries */
+
+/* MOBILE PORTRAIT */
+@media only screen and (min-width: 320px)
+    #modal
+        .wrapper
+            iframe
+                height: 12.125em
+
+@media only screen and (min-width: 380px) {}
+
+/* MOBILE LANDSCAPE */
+@media only screen and (min-width: 480px)
+    header
+        background-size: 100%
+        > .c-wrapper
+            padding: 4.5em 0 2.5em
+        h1
+            font-size: 2.8em
+
+    nav
+        background-color: rgba(244,234,217,0.95)
+        display: block
+        max-width: 1440px
+        width: 100%
+        z-index: 1
+        .mobi-head
+            display: none
+        .c-wrapper
+            padding: 0
+        ul
+            display: block
+            margin: 0
+            text-transform: uppercase
+            li
+                display: inline-block
+                font-size: 0.75em
+                line-height: 0.75em
+                margin-bottom: 3px
+                &\+li
+                    margin-left: 1.5em
+                &.active
+                    border-bottom: 3px solid active-color
+                    margin-bottom: 0
+                & a
+                    display: inline-block
+                    padding: 1.25em 0 1em
+        a,
+        a:hover
+            text-decoration: none
+
+    table
+        td
+            span.abbr
+                display: none
+            span.full,
+            span.mer
+                display: inline
+
+    #modal
+        .wrapper
+            iframe
+                height: 18.75em
+                width: 25em
+
+    #contact-info
+        iframe
+            min-height: 22em
+
+    .photo.sml
+        float: right
+        margin: 0.3em 0 1em 1.5em
+
+@media only screen and (min-width: 600px)
+    header
+        > .c-wrapper
+            padding: 5em 0 3em
+    .photo
+        float: right
+        margin-left: 1.5em
+        margin-top: 0.1875em
+        &.full
+            float: none
+            margin-left: auto
+            margin-right: auto
+        &.alt-view
+            float: left
+            margin-left: 0
+            margin-right: 1.5em
+
+/* TABLET/NETBOOK */
+@media only screen and (min-width: 768px)
+    header
+        > .c-wrapper
+            padding: 5.5em 0 6em
+    #content
+        > div
+            min-height: 40.625em
+
+    .c-wrapper
+        padding: 2.90476em 0
+        width: 41.375em
+
+    header
+        background-position: center -20em
+        text-align: right
+        > .c-wrapper
+            padding-bottom: 5em
+        h1
+            font-size: 3em
+        .logo
+            display: block
+            float: right
+            margin-left: 1.5em
+            text-align: left
+
+    table
+        td
+            padding: 0 2px
+
+    #modal
+        .wrapper
+            margin: 1.875em auto
+            width: 37.5em
+
+    .photo::not(.full)
+        max-width: none
+        width: 20em
+
+    #kata
+        li
+            line-height: 3.5em
+            padding: 0
+            position: relative
+            text-align: left
+            span
+                display: inline
+                &\+ span::before
+                    content: ' - '
+            div
+                display: block
+                right: 0
+                margin: 0
+                position: absolute
+                top: 0
+
+/* LANDSCAPE TABLET/NETBOOK/LAPTOP */
+@media only screen and (min-width: 1024px) {}
+
+/* DESKTOP */
+@media only screen and (min-width: 1280px) {}
+
+/* WIDESCREEN */
+/* Increased body size for legibility */
+@media only screen and (min-width: 1400px)
+    body
+        font-size: 116.75%
+        max-width: 1440px
+
+    /* 18.5px / 28px */
+/* PRINT */
+@media print
+    *
+        background: transparent !important
+        color: black !important
+        text-shadow: none !important
+        filter: none !important
+        -ms-filter: none !important
+
+    /* Black prints faster */
+    a,
+    a:visited
+        color: common-border-color !important
+        text-decoration: underline
+
+    a[href]:after
+        content: " (" attr(href) ")"
+
+    abbr[title]:after
+        content: " (" attr(title) ")"
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after
+        content: ""
+
+    /* Don't print links for images, javascript or internal links */
+    pre,
+    blockquote
+        border: 1px solid common-border-color
+        page-break-inside: avoid
+
+    thead
+        display: table-header-group
+
+    /* Repeat header row at top of each printed page */
+    tr,
+    img
+        page-break-inside: avoid
+
+    img
+        max-width: 100% !important
+
+    @page
+        margin: 0.5cm
+    p,
+    h2,
+    h3
+        orphans: 3
+        widows: 3
+
+    h2,
+    h3
+        page-break-after: avoid

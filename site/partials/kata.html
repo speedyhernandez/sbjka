@@ -1,0 +1,18 @@
+<section>
+    <h2>Kata</h2>
+    <p>In Shotokan, kata is not a performance or a demonstration, but is for individual karateka to practice full techniques - with every technique potentially a ikken hisatsu "killing blow" - while paying particular attention to form and timing/rhythm. As the karateka grows older, more emphasis is placed on the health benefits of practicing kata, promoting fitness while keeping the body soft, supple, and agile.</p>
+    <p>The following is a list of all 26 formal katas in the Shotokan system.</p>
+    <p>Each kata has a video of the kata, a diagram of the steps, and an example bunkai video.</p>
+    <ul id="kata">
+        <li data-ng-repeat="k in kataCtrl.kata">
+            <span class="name" data-ng-bind="k.name"></span>
+            <span class="desc" data-ng-bind="k.desc"></span>
+            <div class="btns">
+                <a data-vid="{{ k.vid }}">video</a
+                ><a data-diag="{{ k.diag }}">diagram</a
+                ><a data-vid="{{ k.bvid }}">bunkai</a>
+            </div>
+        </li>
+    </ul>
+</section>
+<modal></modal>

@@ -1,0 +1,16 @@
+<nav id="navbar">
+    <div class="mobi-head">
+        <a href="#/">SBJKA</a>
+        <button id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+    <ul id="navlinks" class="c-wrapper">
+        <li
+            data-ng-repeat="link in navCtrl.links"
+            data-ng-class="{ 'active':navCtrl.isCurrent('{{ link.url }}') }"
+        ><a data-ng-href="#{{ link.url }}">{{ link.text }}</a></li>
+    </ul>
+</nav>

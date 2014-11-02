@@ -1,0 +1,184 @@
+[
+    {
+        "diag": "HeianShodan",
+        "name": "Heian Shodan",
+        "desc": "Peaceful Mind One",
+        "vid": "qmBI0zBQhOw",
+        "bvid": "_vcBz1SFJCI"
+    },
+    {
+        "diag": "HeianNidan",
+        "name": "Heian Nidan",
+        "desc": "Peaceful Mind Two",
+        "vid": "NYyY_-KE0ok",
+        "bvid": "Fep1OcWkDE4"
+    },
+    {
+        "diag": "HeianSandan",
+        "name": "Heian Sandan",
+        "desc": "Peaceful Mind Three",
+        "vid": "MUTq6Z6UOc0",
+        "bvid": "Bw7IsLeXoqk"
+    },
+    {
+        "diag": "HeianYondan",
+        "name": "Heian Yondan",
+        "desc": "Peaceful Mind Four",
+        "vid": "dzKvPzepJ-c",
+        "bvid": "jXLD8uZjbec"
+    },
+    {
+        "diag": "HeianGodan",
+        "name": "Heian Godan",
+        "desc": "Peaceful Mind Five Universe",
+        "vid": "yJ_WhBB-35A",
+        "bvid": "oyeb6h6xENQ"
+    },
+    {
+        "diag": "TekkiShodan",
+        "name": "Tekki Shodan",
+        "desc": "Iron Horse One",
+        "vid": "UNsctHC46DM",
+        "bvid": "V5mnhmlS174"
+    },
+    {
+        "diag": "TekkiNidan",
+        "name": "Tekki Nidan",
+        "desc": "Iron Horse Two",
+        "vid": "7aE6a00v3nY",
+        "bvid": "ik2VPvwEZOo"
+    },
+    {
+        "diag": "TekkiSandan",
+        "name": "Tekki Sandan",
+        "desc": "Iron Horse Three",
+        "vid": "E-vDegOx2TM",
+        "bvid": "hPhkwcaQSRk"
+    },
+    {
+        "diag": "BassaiDai",
+        "name": "Bassai Dai",
+        "desc": "Penetrating the Fortress - Big",
+        "vid": "92WnIBFZ_Co",
+        "bvid": "e6d_5BIJShc"
+    },
+    {
+        "diag": "BassaiSho",
+        "name": "Bassai Sho",
+        "desc": "Penetrating the Fortress - Small",
+        "vid": "BICiPMeAQIY",
+        "bvid": "v_nwHagWq4M"
+    },
+    {
+        "diag": "Enpi",
+        "name": "Enpi",
+        "desc": "Flying Swallow",
+        "vid": "Ewrxi_r1l5M",
+        "bvid": "OLiLv38OPX4"
+    },
+    {
+        "diag": "Jion",
+        "name": "Jion",
+        "desc": "Love (and) Goodness",
+        "vid": "1_RsDI1sla0",
+        "bvid": "7xX1iOZLSHA"
+    },
+    {
+        "diag": "Jitte",
+        "name": "Jitte",
+        "desc": "Ten Hands",
+        "vid": "pBaV524THwM",
+        "bvid": "xirS_OWXD9g"
+    },
+    {
+        "diag": "Jiin",
+        "name": "Ji'in",
+        "desc": "Named after the Saint",
+        "vid": "KCGBGAm0F5g",
+        "bvid": "BKrlN7rcQ5s"
+    },
+    {
+        "diag": "Hangetsu",
+        "name": "Hangetsu",
+        "desc": "Half Moon",
+        "vid": "nHuk_Gdk_04",
+        "bvid": "D_N5P2Lu3V8"
+    },
+    {
+        "diag": "KankuDai",
+        "name": "Kanku-Dai",
+        "desc": "To look at the Sky - Big",
+        "vid": "UWD0PHd4R14",
+        "bvid": "cTQ7b96ZQ8w"
+    },
+    {
+        "diag": "KankuSho",
+        "name": "Kanku-Sho",
+        "desc": "To look at the Sky - Small",
+        "vid": "gRo0gvOJ9qA",
+        "bvid": "4LpIS9XF2tQ"
+    },
+    {
+        "diag": "Chinte",
+        "name": "Chinte",
+        "desc": "Incredible Hands",
+        "vid": "XHphhd1pYIA",
+        "bvid": "PnYsF-bfD0k"
+    },
+    {
+        "diag": "Gankaku",
+        "name": "Gankaku",
+        "desc": "Crane on the Rock",
+        "vid": "cvsjs9CDwiw",
+        "bvid": "0CXWItbvnzI"
+    },
+    {
+        "diag": "GojushihoDai",
+        "name": "Gojushiho-Dai",
+        "desc": "54 Steps - Big",
+        "vid": "POfz6iXZdkk",
+        "bvid": "oboLsQjqUtg"
+    },
+    {
+        "diag": "GojushihoSho",
+        "name": "Gojushiho-Sho",
+        "desc": "54 Steps - Small",
+        "vid": "bOMusYbu2fY",
+        "bvid": "UoYvaN6LC2k"
+    },
+    {
+        "diag": "Meikyo",
+        "name": "Meikyo",
+        "desc": "Mirror of the soul",
+        "vid": "vtSCmAiXj4c",
+        "bvid": "LDdBYM_1gis"
+    },
+    {
+        "diag": "Nijushiho",
+        "name": "Nijushiho",
+        "desc": "24 Steps",
+        "vid": "GL_u_K2PNUY",
+        "bvid": "cd-pPIXb2IY"
+    },
+    {
+        "diag": "Sochin",
+        "name": "Sochin",
+        "desc": "Preserve Peace",
+        "vid": "FqgMFXSt-Vc",
+        "bvid": "1pdwgB7qOe0"
+    },
+    {
+        "diag": "Unsu",
+        "name": "Unsu",
+        "desc": "Cloud Hands",
+        "vid": "I6zCXYG3w2Q",
+        "bvid": "OztWOFMSNbo"
+    },
+    {
+        "diag": "Wankan",
+        "name": "Wankan",
+        "desc": "Crown of a king",
+        "vid": "oZ0tuNX2Ngw",
+        "bvid": "7CEbu32JvOY"
+    }
+]

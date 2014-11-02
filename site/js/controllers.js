@@ -45,10 +45,6 @@
                 nav.mobitoggle(false);
             }, false);
 
-            doc.getElementById('menu-toggle').addEventListener('touchend', function () {
-                nav.mobitoggle(false);
-            }, false);
-
             doc.getElementById('navlinks').addEventListener('click', function () {
                 if (doc.getElementById('header').classList.contains('mobi-open')) {
                     nav.mobitoggle(false);

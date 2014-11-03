@@ -58,7 +58,7 @@
             }, false);
         }])
 
-        .controller('KataController', [ '$http', function ($http) {
+        .controller('KataController', ['$http', '$anchorScroll', function ($http, $anchorScroll) {
             var doc = document,
                 kataList = this;
 
@@ -76,6 +76,7 @@
                 e.preventDefault();
 
                 if (tgt.hasAttribute('data-vid')) {
+                    $anchorScroll();
                     doc.getElementById('modal-header').textContent = e.target.textContent;
                     vid.setAttribute('src', 'http://www.youtube.com/embed/' + tgt.getAttribute('data-vid') + '?rel=0');
                     vidWrapper.classList.add('show');

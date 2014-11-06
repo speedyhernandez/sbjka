@@ -5,7 +5,7 @@
 
         .directive('navContent', function () {
             return {
-                restrict: 'E',
+                restrict: 'A',
                 replace: true,
                 templateUrl: 'templates/nav.html',
                 controller: 'NavController',
@@ -15,7 +15,7 @@
 
         .directive('headerContent', function () {
             return {
-                restrict: 'E',
+                restrict: 'A',
                 replace: true,
                 templateUrl: 'templates/header.html'
             };
@@ -23,7 +23,7 @@
 
         .directive('footerContent', function () {
             return {
-                restrict: 'E',
+                restrict: 'A',
                 replace: true,
                 templateUrl: 'templates/footer.html'
             };
@@ -31,7 +31,7 @@
 
         .directive('modal', function () {
             return {
-                restrict: 'E',
+                restrict: 'A',
                 replace: true,
                 templateUrl: 'templates/modal.html',
                 controller: 'ModalController',

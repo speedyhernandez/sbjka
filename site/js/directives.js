@@ -3,7 +3,7 @@
     'use strict';
     angular.module('sbjkaApp.directives', [])
 
-        .directive('navContent', function () {
+        .directive('rhNavContent', function () {
             return {
                 restrict: 'A',
                 replace: true,
@@ -13,7 +13,7 @@
             };
         })
 
-        .directive('headerContent', function () {
+        .directive('rhHeaderContent', function () {
             return {
                 restrict: 'A',
                 replace: true,
@@ -21,7 +21,7 @@
             };
         })
 
-        .directive('footerContent', function () {
+        .directive('rhFooterContent', function () {
             return {
                 restrict: 'A',
                 replace: true,
@@ -29,7 +29,7 @@
             };
         })
 
-        .directive('modal', function () {
+        .directive('rhModal', function () {
             return {
                 restrict: 'A',
                 replace: true,
